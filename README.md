@@ -11,6 +11,6 @@ El script es imperfecto y por el momento tiene las siguientes limitaciones:
 
 - Está diseñado para cierto tipo de cámaras. Las coordenadas del lugar en el que aparece la marca de agua con el valor de temperatura en la imagen cambian entre diferentes cámaras y diferentes configuraciones de la misma cámara. Cada tipo de imagen requiere de un procesamiento (recorte y aumento) diferente. El script actual está diseñado utilizando Browning Wildlife Cameras, y además para determinadas configuraciones (calidad de imagen, altura de la franja donde aparece la marca de agua de la temperatura...). He incluido tantos tipos de imagen como procesé, pero con nuevas configuraciones de cámara habrá nuevos tipos que aún no estén incluidos.
 
-- Solo lee temperaturas del rango 10 – 59 C.
+- Solo lee temperaturas del rango 10 : 59 C.
 
 - La lectura es imperfecta y en ocasiones puede confundir números (por ejemplo, leer un 1 como un 7) o no reconocer ciertos números (parece que en ocasiones le cuesta reconocer los dígitos 1 y 5). Por lo tanto, al extraer los valores de temperatura, habrá algunos valores en blanco (NA) que habrá que extraer manualmente y, en ocasiones, valores erróneos. He intentado al máximo dar preferencia a, antes de poner un número erróneo, dejar el valor en blanco. Aun así, considerar que existe la posibilidad de que haya algún valor erróneo.
